@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Mukta";
+            background-color: rgb(233, 233, 233);
+        }
+       
+        .navbar{
+            height:60px;
+            background-color: #ffffff;
+            color:#14125c; 
+            gap: 200px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .navbar #logo{
+            font-family: "Ranchers", cursive;
+            background: url(logo.jpeg);
+            margin: 1.5px;
+            display: inline-flex;
+            font-size: 28px;
+            background-position: 0 0;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: #5b728a54;
+            animation: animatedOne 100s linear infinite;
+        }
+        @keyframes animatedOne {
+          from {
+              background-position: 0 0;
+          }
+          to {
+              background-position: 100% 0;
+          }
+        }
+        .navbar a {
+            color: #14125c;
+            margin-left: 30px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            margin: 4vh 25vh;
+            width: 1150px;
+            justify-content: center;
+            box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.16);
+
+        }
+
+        .left-side {
+            flex: 1;
+            border-radius: 8px;
+            justify-content: center;
+            padding: 4.5% 0 4.7% 3.5%;
+            background-image:url(signin.png);
+            color: #282e3e;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 40px;
+        }
+
+        .left-side a{
+            font-size:20px;
+            font-weight: 500;
+        }
+
+        .right-side {
+            flex: 1;
+            display: flex;
+            background-color:white;
+            /* justify-content: center; */
+            /* align-items: center; */
+            border-radius: 15px;
+        }
+        .ak{
+            width:100%;
+            padding: 120px 10px 8px 8px;
+            border-radius: 4px;
+            border:none;
+            font-weight: 500;
+            font-size: 1rem;
+            outline:none;
+            cursor:text;
+            font-family:"Mukta";
+
+        }
+        .form-container {
+            padding-top: 100px;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            
+        }
+        .form-container2{
+            padding-top: 7px;
+            padding-left:70px;
+        }
+        .form-container h2 {
+            color: #333;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            width:350px;
+            
+        }
+
+        .form-container label {
+            margin-bottom: 8px;
+        }
+
+        .form-container input {
+            padding: 10px;
+            margin-bottom: 26px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            background-color: #C8BFE7;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a id="logo" href="edu.html" style="margin-left:10px;">Learnera</a>
+    </div>
+
+    <div class="container">
+        <div class="left-side">
+            <p>The best way to study
+            <br>Sign up for Free
+            </p>
+            <ul>
+                <a>✔️LIVE Classes</a><br>
+                <a>✔️Best Teachers</a><br>
+                <a>✔️Free Quiz</a><br>
+                <p style="color:white;margin-top:250px;margin-left: -50px;font-weight: 550;">Learnera</p>
+                </ul>
+        </div>
+        <div class="right-side">
+            <!-- Right side content, e.g., login form -->
+            <div class="form-container">
+                <h2 style="margin: 10px; font-size:30px; font-weight: 700;">New to Learnera</h2><br>
+                <div class="form-container2">
+                    <form action="#" style="font-weight: 700;">Full Name
+                        <input class="ak" type="text" id="fullname" name="fullname" placeholder="Full Name" style="padding: 12px 10px 12px 15px;background-color:#F6F7FB;border:none;font-family:'mukta';font-weight:500;box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.1);">Mobile Number
+                        <input class="ak" type="text" id="mobile" name="mobile" placeholder="Mobile Number" style="padding: 12px 10px 12px 15px;background-color:#F6F7FB;border:none;font-family:'mukta';font-weight:500;box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.1);">Email
+                        <input class="ak" type="email" id="email" name="email" placeholder="Email ID" style="padding: 12px 10px 12px 15px;background-color:#F6F7FB;border:none;font-family:'mukta';font-weight:500;box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.1);">
+                        <label for="option1" style="font-weight: 300; font-size: 14px;">
+                            <input type="checkbox" id="option1" name="option1" value="Option 1" style="vertical-align: top;"> I accept Learnera's <b>Terms of Service</b> and <b>Privacy Policy</b>
+                        </label>
+                        <button type="submit" style="background-color:#C8BFE7;font-family:'mukta';font-weight: 600;padding: 5px 45px;font-size: 20px">Sign up</button></form>
+                        <h3 STYLE="text-align: center;">OR</h3>
+                        </form>
+                        <a href="signin.html">
+                            <button type="submit" style="color:#3d4457;width:350px;background-color: #F6F7FB;font-family:'mukta';font-weight: 600;padding: 10px 26px 10px 26px;font-size: 18px;border:solid 1px #C8BFE7">Already have an account? Log in</button>
+                        </a>
+                        
+            </div>
+        </div>
+    </div>
+</body>
+</html>

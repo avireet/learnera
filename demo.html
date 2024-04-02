@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+        /* Style for the text card */
+        .text-card {
+            width: 200px;
+            height: 50px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+
+        /* Style for the image */
+        .image-container {
+            display: none;
+        }
+
+        /* Show image when hovering over the text card */
+        .text-card:hover + .image-container,
+        .image-container:hover {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Text card -->
+<div class="text-card">Hover Me</div>
+
+<!-- Image container -->
+<div class="image-container">
+    <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="Hovered Image" width="200">
+</div>
+
+</body>
+</html>

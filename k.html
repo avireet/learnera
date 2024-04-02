@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Reviews</title>
+  <style>
+    .reviews-container {
+      width: 100%;
+      overflow: hidden;
+      padding: 50px 0;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .reviews-scroll {
+      display: flex;
+      animation: scroll 10s linear infinite;
+    }
+
+    .reviews-scroll2 {
+      display: flex;
+      animation: scroll 20s linear infinite;
+    }
+
+    .review {
+      flex: 0 0 300px;
+      margin-right: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      border: 2px solid #656565;
+      background-color: #fefff4;
+      border-radius: 8px;
+      font-size: 18px;
+      vertical-align: top;
+      cursor: pointer;
+      transition: transform 0.5s ease-in-out;
+      position: relative;
+    }
+
+    .review:hover {
+      transform: translateY(-10px);
+      animation-play-state: paused; /* Pause the animation on hover */
+    }
+    .reviews-scroll:hover{
+      animation-play-state: paused;
+    }
+    .reviews-scroll2:hover{
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* @keyframes scrollRight2 {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    } */
+  </style>
+</head>
+<body>
+
+  <div class="reviews-container">
+    <h2>Our customers can't stop talking about us</h2>
+    <div class="reviews-scroll">
+      <div class="review">
+        "Great platform to learn and grow. Highly recommended!"
+      </div>
+      <div class="review">
+        "Awesome experience! The courses are top-notch."
+      </div>
+      <div class="review">
+        "I've learned so much here. It's changed my life!"
+      </div>
+      <div class="review">
+        "Excellent courses and supportive community."
+      </div>
+      <div class="review">
+        "The best learning platform I've ever used!"
+      </div>
+      <!-- Repeat the reviews to create an endless loop -->
+      <div class="review">
+        "I highly recommend it to other students looking to enhance their learning experience."
+      </div>
+      <div class="review">
+        "Awesome experience! The courses are top-notch."
+      </div>
+      <div class="review">
+        "I've learned so much here. It's changed my life!"
+      </div>
+      <div class="review">
+        "Excellent courses and supportive community."
+      </div>
+      <div class="review">
+        "The best learning platform I've ever used!"
+      </div>
+    </div>
+    <div class="reviews-scroll2">
+      <div class="review">
+        "Great platform to learn and grow. Highly recommended!"
+      </div>
+      <div class="review">
+        "Awesome experience! The courses are top-notch."
+      </div>
+      <div class="review">
+        "I've learned so much here. It's changed my life!"
+      </div>
+      <div class="review">
+        "Excellent courses and supportive community."
+      </div>
+      <div class="review">
+        "The best learning platform I've ever used!"
+      </div>
+      <!-- Repeat the reviews to create an endless loop -->
+      <div class="review">
+        "Great platform to learn and grow. Highly recommended!"
+      </div>
+      <div class="review">
+        "Awesome experience! The courses are top-notch."
+      </div>
+      <div class="review">
+        "I've learned so much here. It's changed my life!"
+      </div>
+      <div class="review">
+        "Excellent courses and supportive community."
+      </div>
+      <div class="review">
+        "The best learning platform I've ever used!"
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
